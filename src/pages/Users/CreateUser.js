@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Form, Input, Space } from 'antd';
 import LayoutContainer from '../Layout/LayoutContainer';
 import { useDispatch } from 'react-redux';
-import { createUser } from './../../store/slices/usersSlices';
+import { createUser } from './../../store/actions/usersActions';
 
 const CreateUserComponent = () => {
   const dispatch = useDispatch();

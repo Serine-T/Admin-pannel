@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSingleUser, editUser } from './../../store/slices/usersSlices';
+import { getSingleUser, editUser } from './../../store/actions/usersActions';
 import { useParams } from 'react-router-dom';
 import { Form, Input, Space } from 'antd';
 import LayoutContainer from '../Layout/LayoutContainer';
