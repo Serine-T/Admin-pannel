@@ -1,0 +1,37 @@
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #ffffff !important;
+    border-bottom: 2px solid #E9E9E9;
+    .toggle-btn {
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    .badge-count {
+        sup {
+            top: 25px !important;
+        }
+    }
+
+    .badge-dot {
+        sup {
+            top: 45px !important;
+            right: 5px !important;
+        } 
+    }
+}
+
+.main_navbar_container {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+    .ant-drawer-body {
+        width: 200px;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }

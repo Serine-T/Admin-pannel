@@ -1,0 +1,67 @@
+.sidebar-container {
+  padding-top: 64px;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  background: #2D3347 !important;
+  z-index: 1000;
+}
+
+@media (max-width: 992px) {
+  .sidebar-container {
+    display: none;
+  }
+}
+
+.main-nav {
+  background: transparent !important;
+  width: 202px !important;
+  color: #788195 !important;
+}
+
+.main-nav .ant-menu-item-selected {
+  background: #1F2430 !important;
+  color: #FFFFFF !important;
+}
+
+.main-nav .ant-menu-item-selected:focus {
+  background: #1F2430 !important;
+}
+
+.main-nav .ant-menu-item {
+  width: 100% !important;
+}
+
+.main-nav .ant-menu-item:focus {
+  background: #1F2430 !important;
+}
+
+.main-nav .ant-menu-item:hover {
+  color: #FFFFFF !important;
+}
+
+.main-nav .ant-menu-item::after {
+  border-right: 0 !important;
+}
+
+.main-nav .ant-menu-submenu-selected {
+  color: #FFFFFF !important;
+}
+
+.main-nav .ant-menu-submenu-selected:focus {
+  background: #1F2430 !important;
+}
+
+.main-nav .ant-menu-submenu-selected .ant-menu-submenu-arrow::after, .main-nav .ant-menu-submenu-selected .ant-menu-submenu-arrow::before {
+  color: #FFFFFF !important;
+}
+
+.main-nav .ant-menu-submenu-arrow::after, .main-nav .ant-menu-submenu-arrow::before {
+  color: #788195 !important;
+}
+
+.main-nav .ant-menu-inline {
+  background: transparent !important;
+  color: #788195 !important;
+}
+/*# sourceMappingURL=styles.css.map */

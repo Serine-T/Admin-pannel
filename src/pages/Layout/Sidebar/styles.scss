@@ -1,0 +1,95 @@
+.sidebar-container {
+    padding-top: 64px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background: #2D3347 !important;
+    z-index: 1000;
+
+    @media(max-width: 992px) {
+        display: none;
+    }
+}
+
+.main-nav {
+    background: transparent !important;
+    width: 201px !important;
+    color: #788195 !important;
+
+    .ant-menu-title-content {
+        padding-left: 15px !important;
+        width: 100% !important;
+
+        a {
+            color: #788195 !important;
+            span {
+                color: #788195 !important;
+
+                &:focus {
+                    background: #1F2430 !important;      
+                }
+                
+                .ant-menu-submenu-arrow { 
+                    &::after, 
+                    &::before {
+                        color: #FFFFFF !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-menu-item-selected {
+        width: 100% !important;
+        background: #1F2430 !important;
+                        
+        svg {
+            path {
+                fill: #FFFFFF !important;
+            }
+        }
+
+        .ant-menu-title-content {   
+            a {            
+                span {
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+        
+        &:focus {
+            background: #1F2430 !important; 
+        }
+        
+        &::after {
+            border-right: 0 !important;
+        }
+    }
+
+    .ant-menu-submenu-title {
+        color: #788195;
+
+        &:hover {
+            color: #FFFFFF !important;
+
+            .ant-menu-submenu-arrow { 
+                &::after, &::before{
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+    }
+
+    .ant-menu-submenu-arrow { 
+        &::after, 
+        &::before, 
+        &:hover {
+            color: #788195 !important;
+        }
+    }
+
+    .ant-menu-inline {
+        background: transparent !important;
+        color: #788195 !important;
+    }
+}
