@@ -9,15 +9,21 @@ const MainComponent = ({ isStandard, children }) => {
   const dispatch = useDispatch();
   const path = window.location.pathname;
 
-  const currentRouteInfo = routeItems.find((route) => {
+  let currentRouteInfo = {};
+  routeItems.forEach((route) => {
     if(route.children) {
-      return route.children.find((child) => child.path === path);
+      const child = route.children.find((child) => child.path === path);
+      if(child) {
+        currentRouteInfo = { ...child };
+      }
     }
-    
-    return route.path === path;
+    if (route.path === path) {
+      currentRouteInfo = { ...route };
+    }
   });
 
   useEffect(() => {
+    console.log(currentRouteInfo);
     if (currentRouteInfo) {
       dispatch(setRoute({
         key: currentRouteInfo.key,

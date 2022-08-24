@@ -8,9 +8,13 @@ import CuisineContainer from '../pages/Cuisine/Cuisine';
 import PostContainer from '../pages/Post/Post';
 import LearnContainer from './../pages/Learn/Learn';
 import { CuisineIcon, HomeIcon, LearnIcon, PostIcon, RestaurantsIcon, ShopIcon, UserIcon } from './sidebarIcons';
-import LearnSubMenuContainer from './../pages/Learn/LearnSubMenu';
 import CreateUserComponent from './../pages/Users/CreateUser';
 import EditUserComponent from './../pages/Users/EditUser';
+import MoviesContainer from './../pages/Learn/Movies';
+import RecipesContainer from '../pages/Learn/Recipes';
+import DieticianContainer from './../pages/Learn/Dietician';
+import BooksContainer from './../pages/Learn/Books';
+import QuickStartContainer from './../pages/Learn/QuickStart';
 
 const routeItems = [
   {
@@ -57,31 +61,31 @@ const routeItems = [
         key: 'start',
         title: 'Quick Start',
         path: '/learn/start',
-        component: <LearnSubMenuContainer />,
+        component: <QuickStartContainer />,
       },
       {
         key: 'recipes',
         title: 'Recipes',
         path: '/learn/recipes',
-        component: <LearnSubMenuContainer />,
+        component: <RecipesContainer />,
       },
       {
         key: 'books',
         title: 'Books',
         path: '/learn/books',
-        component: <LearnSubMenuContainer />,
+        component: <BooksContainer />,
       },
       {
         key: 'movies',
         title: 'Movies',
         path: '/learn/movies',
-        component: <LearnSubMenuContainer />,
+        component: <MoviesContainer />,
       },
       {
         key: 'dietician',
         title: 'Dietician',
         path: '/learn/dietician',
-        component: <LearnContainer />,
+        component: <DieticianContainer />,
       }
     ]
   },

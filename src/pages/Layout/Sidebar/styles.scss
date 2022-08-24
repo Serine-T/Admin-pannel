@@ -22,20 +22,6 @@
 
         a {
             color: #788195 !important;
-            span {
-                color: #788195 !important;
-
-                &:focus {
-                    background: #1F2430 !important;      
-                }
-                
-                .ant-menu-submenu-arrow { 
-                    &::after, 
-                    &::before {
-                        color: #FFFFFF !important;
-                    }
-                }
-            }
         }
     }
 
@@ -49,11 +35,9 @@
             }
         }
 
-        .ant-menu-title-content {   
-            a {            
-                span {
-                    color: #FFFFFF !important;
-                }
+        .ant-menu-title-content {            
+            span {
+                color: #FFFFFF !important;
             }
         }
         
