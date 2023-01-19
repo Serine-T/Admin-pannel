@@ -23,7 +23,6 @@ const MainComponent = ({ isStandard, children }) => {
   });
 
   useEffect(() => {
-    console.log(currentRouteInfo);
     if (currentRouteInfo) {
       dispatch(setRoute({
         key: currentRouteInfo.key,
